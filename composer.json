@@ -1,0 +1,39 @@
+{
+    "name": "taptap/laravel-phpredis",
+    "type": "library",
+    "description": "A Laravel redis wrapper library for phpredis",
+    "keywords": [
+        "laravel",
+        "phpredis",
+        "redis"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1",
+        "ext-redis": "*",
+        "illuminate/redis": "5.4.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TapTap\\LaravelRedis\\RedisServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "TapTap\\LaravelRedis\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TapTap\\LaravelRedis\\": "tests"
+        }
+    }
+}
